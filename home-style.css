@@ -1,0 +1,755 @@
+@font-face {
+    font-family: "ubuntu";
+    src: url("AvQest.ttf");
+}
+
+.body {
+    margin: 0px;
+    overflow: hidden;
+    cursor: url("images/arrow.cur"), auto;
+}
+
+.d0 {
+    width: 1366px;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.d1 {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(54, 54, 54);
+    display: flex;
+    flex-direction: column;
+}
+
+.d2 {
+    background-image: url("images/score.jpg");
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position-y: 3px;
+    height: 12vh;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    padding-top: -1%;
+}
+
+.d3 {
+    /* background-color: red; */
+    height: 90vh;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    background-image: url("images/background1.jpg");
+    background-size: contain;
+    background-repeat: repeat-x;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameover {
+    height: 90vh;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    background-image: url("images/gameover.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.d4 {
+    /* background-color: aqua; */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.d5 {
+    /* background-color: brown; */
+    flex-grow: 1;
+    font-family: "ubuntu";
+    font-size: 33px;
+    font-weight: bold;
+    color: rgb(58, 255, 245);
+    text-align: right;
+    text-shadow: 0px 8px rgb(236, 22, 22);
+    text-shadow: 0px 0px 6px rgba(42, 162, 218, 0.342);
+}
+
+.d6 {
+    /* background-color: chartreuse; */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.d7 {
+    /* background-color: crimson; */
+    flex-grow: 1;
+    font-family: "ubuntu";
+    font-weight: bold;
+    font-size: 33px;
+    color: rgb(58, 255, 245);
+    text-shadow: 0px 0px 6px rgba(42, 162, 218, 0.342);
+    text-align: right;
+}
+
+.d8 {
+    /* background-color: orange; */
+    flex-grow: 1;
+    width: 20vw;
+    font-family: "ubuntu";
+    font-weight: bold;
+    font-size: 33px;
+    color: rgb(58, 255, 245);
+    text-align: left;
+    text-shadow: 0px 0px 6px rgba(42, 162, 218, 0.342);
+    padding-left: 1%;
+}
+
+.d9 {
+    /* background-color: teal; */
+    flex-grow: 1;
+    font-family: "ubuntu";
+    font-size: 33px;
+    font-weight: bold;
+    text-align: left;
+    color: rgb(58, 255, 245);
+    text-shadow: 0px 0px 6px rgba(42, 162, 218, 0.342);
+    padding-left: 1%;
+}
+
+.d10 {
+    /* background-color: darkgoldenrod; */
+    flex-grow: 8;
+    height: 80vh;
+}
+
+.castle2 {
+    flex-grow: 2;
+    height: 80vh;
+    background-image: url("images/castle2.png");
+    background-repeat: no-repeat;
+    background-size: 100vh;
+    background-position-x: -235px;
+    background-position-y: 9px;
+    /* transform: scale(0.9); */
+    filter: drop-shadow(-4px 5px 4px rgba(49, 24, 3, 0.575));
+    transition-duration: 0.4s;
+}
+
+.danger2 {
+    /* background-color: aqua; */
+    flex-grow: 2;
+    height: 80vh;
+    /* background-image: url("images/castle2.png"); */
+    background-repeat: no-repeat;
+    background-size: 100vh;
+    background-position-x: -235px;
+    background-position-y: 9px;
+    /* transform: scale(0.9); */
+    filter: drop-shadow(-4px 5px 4px rgba(49, 24, 3, 0.575));
+    transition-duration: 0.4s;
+    animation-name: dangerAniamtion2;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+}
+
+.castle3 {
+    flex-grow: 2;
+    height: 80vh;
+    background-image: url("images/castle3.png");
+    background-repeat: no-repeat;
+    background-size: 100vh;
+    background-position-x: -235px;
+    background-position-y: 9px;
+    /* transform: scale(0.9); */
+    filter: drop-shadow(-4px 5px 4px rgba(49, 24, 3, 0.575));
+    transition-duration: 0.4s;
+}
+
+.danger3 {
+    /* background-color: aqua; */
+    flex-grow: 2;
+    height: 80vh;
+    /* background-image: url("images/castle3.png"); */
+    background-repeat: no-repeat;
+    background-size: 100vh;
+    background-position-x: -235px;
+    background-position-y: 9px;
+    /* transform: scale(0.9); */
+    filter: drop-shadow(-4px 5px 4px rgba(49, 24, 3, 0.575));
+    transition-duration: 0.4s;
+    animation-name: dangerAniamtion3;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+}
+
+.castle4 {
+    flex-grow: 2;
+    height: 80vh;
+    background-image: url("images/castle4.png");
+    background-repeat: no-repeat;
+    background-size: 100vh;
+    background-position-x: -235px;
+    background-position-y: 9px;
+    /* transform: scale(0.9); */
+    filter: drop-shadow(-4px 5px 4px rgba(49, 24, 3, 0.575));
+    transition-duration: 0.4s;
+}
+
+.danger4 {
+    /* background-color: aqua; */
+    flex-grow: 2;
+    height: 80vh;
+    /* background-image: url("images/castle4.png"); */
+    background-repeat: no-repeat;
+    background-size: 100vh;
+    background-position-x: -235px;
+    background-position-y: 9px;
+    /* transform: scale(0.9); */
+    filter: drop-shadow(-4px 5px 4px rgba(49, 24, 3, 0.575));
+    transition-duration: 0.4s;
+    animation-name: dangerAniamtion4;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+}
+
+.castle5 {
+    flex-grow: 2;
+    height: 80vh;
+    background-image: url("images/castle5.png");
+    background-repeat: no-repeat;
+    background-size: 100vh;
+    background-position-x: -235px;
+    background-position-y: 9px;
+    /* transform: scale(0.9); */
+    filter: drop-shadow(-4px 5px 4px rgba(49, 24, 3, 0.575));
+    transition-duration: 0.4s;
+}
+
+.danger5 {
+    /* background-color: aqua; */
+    flex-grow: 2;
+    height: 80vh;
+    /* background-image: url("images/castle5.png"); */
+    background-repeat: no-repeat;
+    background-size: 100vh;
+    background-position-x: -235px;
+    background-position-y: 9px;
+    /* transform: scale(0.9); */
+    filter: drop-shadow(-4px 5px 4px rgba(49, 24, 3, 0.575));
+    transition-duration: 0.4s;
+    animation-name: dangerAniamtion5;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+}
+
+.charactor1 {
+    width: 100px;
+    height: 100px;
+    /* background-color: blue; */
+    background-image: url("images/monster1.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: scaleX(-1) scaleY(1);
+    filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.185));
+    position: absolute;
+    mask-position: right;
+}
+
+.charactor1:hover {
+    transform: scaleX(-1.1) scaleY(1.1);
+    cursor: url("images/link.cur"), auto;
+}
+
+.charactor2 {
+    width: 100px;
+    height: 100px;
+    /* background-color: blue; */
+    background-image: url("images/monster2.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: scaleX(-1.33) scaleY(1.33);
+    filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.185));
+    position: absolute;
+    mask-position: right;
+}
+
+.charactor2:hover {
+    transform: scaleX(-1.35) scaleY(1.35);
+    cursor: url("images/link.cur"), auto;
+}
+
+.charactor3 {
+    width: 100px;
+    height: 100px;
+    /* background-color: blue; */
+    background-image: url("images/monster3.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: scaleX(-0.8) scaleY(0.8);
+    filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.185));
+    position: absolute;
+    mask-position: right;
+}
+
+.charactor3:hover {
+    transform: scaleX(-0.9) scaleY(0.9);
+    cursor: url("images/link.cur"), auto;
+}
+
+.charactor4 {
+    width: 100px;
+    height: 100px;
+    /* background-color: blue; */
+    background-image: url("images/monster4.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: scaleX(-1.68) scaleY(1.68);
+    filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.185));
+    position: absolute;
+    mask-position: right;
+}
+
+.charactor4:hover {
+    transform: scaleX(-1.69) scaleY(1.69);
+    cursor: url("images/link.cur"), auto;
+}
+
+.charactor5 {
+    width: 100px;
+    height: 100px;
+    /* background-color: blue; */
+    background-image: url("images/monster5.gif");
+    filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.185));
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: scaleX(-1.6) scaleY(1.6);
+    position: absolute;
+    mask-position: right;
+}
+
+.charactor5:hover {
+    transform: scaleX(-1.61) scaleY(1.61);
+    cursor: url("images/link.cur"), auto;
+}
+
+.d11 {
+    width: 100%;
+    height: 88vh;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    visibility: hidden;
+}
+
+.d12 {
+    /* background-color: yellow; */
+    flex-grow: 1;
+    /* height: 40vh; */
+    font-family: "ubuntu";
+    font-size: 65px;
+    font-weight: bold;
+    color: rgb(58, 255, 245);
+    text-shadow: 6px 6px 0px rgba(3, 29, 41, 0.726);
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.d13 {
+    /* background-color: red; */
+    flex-grow: 1;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 5px;
+}
+
+.i1 {
+    width: 70px;
+    height: 70px;
+    background-image: url("images/Menu_BTN.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 3px;
+}
+
+.i1:hover {
+    width: 70px;
+    height: 70px;
+    padding-top: 3px;
+    background-image: url("images/Menu_BTNh.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url("images/link.cur"), auto;
+}
+
+.replay {
+    width: 70px;
+    height: 70px;
+    background-image: url("images/Replay_BTN.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 3px;
+    transition-duration: 0.3s;
+}
+
+.replay:hover {
+    width: 70px;
+    height: 70px;
+    padding-top: 3px;
+    background-image: url("images/Replay_BTNh.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url("images/link.cur"), auto;
+    transition-duration: 0.3s;
+}
+
+.d14 {
+    width: 100%;
+    height: 88vh;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    visibility: hidden;
+    padding-top: 50px;
+}
+
+.d15 {
+    /* background-color: aqua; */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.d16 {
+    /* background-color: brown; */
+    height: 140px;
+    width: 140px;
+    background-image: url("images/magic.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: scale(1.5);
+    filter: drop-shadow(0px 9px 9px rgba(59, 253, 244, 0.589));
+}
+
+.win {
+    height: 90vh;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    background-image: url("images/win.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.d17 {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 85px;
+}
+
+.d18 {
+    height: 140px;
+    width: 140px;
+    background-image: url("images/Attack3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: scale(2);
+    filter: drop-shadow(0px 4px 4px rgba(245, 56, 9, 0.644));
+    padding-bottom: 10px;
+}
+
+.d19 {
+    /* background-color: yellow; */
+    flex-grow: 1;
+    /* height: 40vh; */
+    font-family: "ubuntu";
+    font-size: 65px;
+    font-weight: bold;
+    color: rgb(58, 255, 245);
+    text-shadow: 6px 6px 0px rgba(5, 77, 110, 0.726);
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.background2 {
+    height: 90vh;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    background-image: url("images/background2.jpg");
+    background-size: contain;
+    background-repeat: repeat-x;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.4s;
+}
+
+.background3 {
+    height: 90vh;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    background-image: url("images/background3.jpg");
+    background-size: contain;
+    background-repeat: repeat-x;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.4s;
+}
+
+.background4 {
+    height: 90vh;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    background-image: url("images/background4.jpg");
+    background-size: contain;
+    background-repeat: repeat-x;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.4s;
+}
+
+.background5 {
+    height: 90vh;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    background-image: url("images/background5.jpg");
+    background-size: contain;
+    background-repeat: repeat-x;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.4s;
+}
+
+.d20 {
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    padding-left: 40px;
+}
+
+.sound {
+    background-image: url("images/Music_BTN.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 45px;
+    height: 45px;
+    transition-duration: 0.3s;
+}
+
+.sound:hover {
+    background-image: url("images/Music_BTNh.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 45px;
+    height: 45px;
+    transition-duration: 0.3s;
+}
+
+.d21 {
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    padding-right: 40px;
+}
+
+.close {
+    background-image: url("images/Close_BTN.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 45px;
+    height: 45px;
+    transition-duration: 0.3s;
+}
+
+.close:hover {
+    background-image: url("images/Close_BTNh.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 45px;
+    height: 45px;
+    transition-duration: 0.3s;
+}
+
+.fire {
+    width: 100px;
+    height: 100px;
+    /* background-color: blue; */
+    background-image: url("images/fire.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: scaleX(-0.9) scaleY(0.9);
+    position: absolute;
+}
+
+.d22 {
+    /* background-color: aqua; */
+    flex-grow: 2;
+    height: 80vh;
+    background-image: url("images/castle1.png");
+    background-repeat: no-repeat;
+    background-size: 100vh;
+    background-position-x: -235px;
+    background-position-y: 9px;
+    /* transform: scale(0.9); */
+    filter: drop-shadow(-4px 5px 4px rgba(49, 24, 3, 0.575));
+    transition-duration: 0.4s;
+}
+
+.danger1 {
+    /* background-color: aqua; */
+    flex-grow: 2;
+    height: 80vh;
+    /* background-image: url("images/castle1.png"); */
+    background-repeat: no-repeat;
+    background-size: 100vh;
+    background-position-x: -235px;
+    background-position-y: 9px;
+    /* transform: scale(0.9); */
+    filter: drop-shadow(-4px 5px 4px rgba(49, 24, 3, 0.575));
+    transition-duration: 0.4s;
+    animation-name: dangerAniamtion1;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+}
+
+@media(max-width:576px) {
+    .d0 {
+        background-image: url("images/win.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .d1 {
+        opacity: 0;
+    }
+    /* .charactor1 {
+        transform: scale(0.5);
+    }
+    .charactor1:hover {
+        transform: scale(0.55);
+    }
+    .charactor2 {
+        transform: scale(0.5);
+    }
+    .charactor2:hover {
+        transform: scale(0.55);
+    }
+    .charactor3 {
+        transform: scale(0.5);
+    }
+    .charactor3:hover {
+        transform: scale(0.55);
+    }
+    .charactor4 {
+        transform: scale(0.5);
+    }
+    .charactor4:hover {
+        transform: scale(0.55);
+    }
+    .charactor5 {
+        transform: scale(0.5);
+    }
+    .charactor5:hover {
+        transform: scale(0.55);
+    } */
+}
+
+@keyframes dangerAniamtion1 {
+    0% {
+        background-image: url("images/castle1.png");
+    }
+    50% {
+        background-image: url("images/danger1.png");
+    }
+    100% {
+        background-image: url("images/castle1.png");
+    }
+}
+
+@keyframes dangerAniamtion2 {
+    0% {
+        background-image: url("images/castle2.png");
+    }
+    50% {
+        background-image: url("images/danger2.png");
+    }
+    100% {
+        background-image: url("images/castle2.png");
+    }
+}
+
+@keyframes dangerAniamtion3 {
+    0% {
+        background-image: url("images/castle3.png");
+    }
+    50% {
+        background-image: url("images/danger3.png");
+    }
+    100% {
+        background-image: url("images/castle3.png");
+    }
+}
+
+@keyframes dangerAniamtion4 {
+    0% {
+        background-image: url("images/castle4.png");
+    }
+    50% {
+        background-image: url("images/danger4.png");
+    }
+    100% {
+        background-image: url("images/castle4.png");
+    }
+}
+
+@keyframes dangerAniamtion5 {
+    0% {
+        background-image: url("images/castle5.png");
+    }
+    50% {
+        background-image: url("images/danger5.png");
+    }
+    100% {
+        background-image: url("images/castle5.png");
+    }
+}
