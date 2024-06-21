@@ -30,7 +30,7 @@ In **Snap Dragon**, enemies are approaching to attack your castle. Your mission 
 - **Challenging Levels**: Face new enemy types with each level.
 - **Exciting Gameplay**: Keep your reflexes sharp and protect your castle.
 
-# ☠️ Enemies
+## ☠️ Enemies
 
 ![Monster 1](assets/monster1.gif)
 ![Monster 2](assets/monster2.gif)
