@@ -50,7 +50,7 @@ Play **Snap Dragon** now by following this link 🤩👉: [Snap Dragon](https://
 - **CSS**
 - **JavaScript**
 
-## 🎮 GamePlay
+## 🎮 Gameplay
 
 ![gameplay 1](assets/snapdragon_game.gif)
 
