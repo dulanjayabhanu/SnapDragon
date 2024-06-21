@@ -5,6 +5,8 @@
   </a>
 </div>
 
+![Contributors](https://img.shields.io/github/contributors/dulanjayabhanu/SnapDragon?color=dark-green) ![Issues](https://img.shields.io/github/issues/dulanjayabhanu/SnapDragon) ![License](https://img.shields.io/github/license/dulanjayabhanu/SnapDragon)
+
 # 🐉 Snap Dragon
 
 Welcome to **Snap Dragon** - a thrilling 2D platformer HTML5 game where you become the valiant protector of a castle! 🏰
